@@ -1,0 +1,17 @@
+{
+  "name": "Ticketing-Tool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/server/index.js",
+    "build": "webpack --config webpack.prod.js",
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+
+  }
+}
