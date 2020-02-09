@@ -9,8 +9,8 @@ app.use(express.static('dist'));
 console.log(__dirname);
 
 // designates what port the app will listen to for incoming requests
-app.listen(3000, function () {
-    const port = "working on port 3000"
+app.listen(4000, function () {
+    const port = "working on port 4000"
     console.log(port)
 })
 
