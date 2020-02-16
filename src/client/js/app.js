@@ -26,3 +26,30 @@
 getTicketsHistory();
 
 export { getTicketsHistory }
+
+/*
+
+let issueDropdown = document.getElementById("issueType");
+let teamDropdown = document.getElementById("team");
+let descriptionText = document.getElementById("description");
+
+// issueDropdown.addEventListener("change",updateSelectedIssue);
+// teamDropdown.addEventListener("change",updateSelectedTeam);
+// descriptionText.addEventListener("change",updateDescription);
+
+function updateSelectedIssue(){
+    let selectedIssue = issueDropdown.options[issueDropdown.selectedIndex].text;
+    console.log(selectedIssue);
+}
+
+function updateSelectedTeam(){
+    let selectedTeam = teamDropdown.options[teamDropdown.selectedIndex].text;
+    console.log(selectedTeam);
+}
+
+function updateDescription(){
+    let description = descriptionText.value;
+    console.log(description);
+}
+
+*/
