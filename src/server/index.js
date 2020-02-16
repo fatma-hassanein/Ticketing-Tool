@@ -34,7 +34,7 @@ app.post('/Data', function (req, res) {
     let data = JSON.parse(rawdata);
     let finalData = [];
     finalData.push(...data);
-    finalData.push(req.body.data);
+    finalData.push(req.body);
     
     let Data = JSON.stringify(finalData);
     fs.writeFile('Data.json', Data, (err) => {

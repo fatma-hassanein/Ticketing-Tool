@@ -6,6 +6,18 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
 const TerserPlugin = require("terser-webpack-plugin") 
 const WorkboxPlugin = require('workbox-webpack-plugin');
 
+function modify(buffer) {
+    // copy-webpack-plugin passes a buffer
+    var manifest = JSON.parse(buffer.toString());
+ 
+    // make any modifications you like, such as
+    manifest.version = package.version;
+ 
+    // pretty print to JSON with two spaces
+    manifest_JSON = JSON.stringify(manifest, null, 2);
+    return manifest_JSON;
+}
+
 module.exports = {
     entry: './src/client/index.js',
     mode: 'development',
@@ -43,6 +55,6 @@ module.exports = {
             inject: false
         }),
         new MiniCssExtractPlugin({filename: "[name].css"}),
-        new WorkboxPlugin.GenerateSW()
+        new WorkboxPlugin.GenerateSW(),
     ]
 }
