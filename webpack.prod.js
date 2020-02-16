@@ -54,6 +54,11 @@ module.exports = {
             filename: "./index.html",
             inject: false
         }),
+        new HtmlWebPackPlugin({
+            template: "./src/client/views/dataTable.html",
+            filename: "./dataTable.html",
+            inject: false
+        }),
         new MiniCssExtractPlugin({filename: "[name].css"}),
         new WorkboxPlugin.GenerateSW(),
     ]

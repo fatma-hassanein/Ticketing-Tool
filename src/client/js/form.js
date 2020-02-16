@@ -1,3 +1,5 @@
+import { fetchDataFromFile } from './dataTables.js'
+
 function getUserInputs (){
 
     let issueTitle = document.getElementById("title");
@@ -25,6 +27,9 @@ function getUserInputs (){
     })
     .then(function(res){ console.log(res) })
     .catch(function(res){ console.log(res) })
+
+    window.location.href = '/dataTable.html';
+    fetchDataFromFile();
 }
 
 export { getUserInputs }

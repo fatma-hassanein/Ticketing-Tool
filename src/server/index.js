@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const fs = require('fs');
+var path = require('path');
 
 const app = express();
 
@@ -17,9 +18,15 @@ app.listen(3000, function () {
     console.log(port)
 })
 
-app.get('/', function (req, res) {
-    res.sendFile('dist/login.html')
-})
+// app.get('/', function (req, res) {
+//     res.sendFile(path.resolve(__dirname+'../../../dist/index.html'));
+//     //res.sendFile(__dirname+'../../dist/index.html')
+// })
+
+// app.get('/dataTable', function (req, res) {
+//     res.sendFile(path.resolve(__dirname+'../../../dist/dataTable.html'));
+//     //res.sendFile(__dirname+'../../dist/dataTable.html')
+// })
 
 app.get('/Data', function (req, res) {
 
@@ -41,5 +48,5 @@ app.post('/Data', function (req, res) {
         if (err) throw err;
         console.log('Data written to file');
     });
-    res.sendStatus(200);
+    res.send('Done');
 })
