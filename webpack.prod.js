@@ -9,10 +9,6 @@ const WorkboxPlugin = require('workbox-webpack-plugin');
 module.exports = {
     entry: './src/client/index.js',
     mode: 'development',
-    output:{
-        libraryTarget: 'var',
-        library: 'Client'
-    },
     optimization: {
         minimizer: [new TerserPlugin({}), new OptimizeCSSAssetsPlugin({})],
     },
@@ -44,6 +40,7 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: "./src/client/views/index.html",
             filename: "./index.html",
+            inject: false
         }),
         new MiniCssExtractPlugin({filename: "[name].css"}),
         new WorkboxPlugin.GenerateSW()
