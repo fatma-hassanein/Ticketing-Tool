@@ -11,37 +11,29 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src="https://kit.fontawesome.com/yourcode.js"></script> 
+        <script src="https://kit.fontawesome.com/yourcode.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="nav.css">
+        <link href="main.css" rel="stylesheet">
     </head>
     <body>
         <header>
-            <div ID="logo"></div>
-            <nav ID=navbar>
+            <div id="logo"></div>
+            <nav id=navbar>
               <h1>Ticketing Tool</h1>
             </nav>
         </header>
-       
         <div class="container">
-            <div id='info' >
-                <!-- <p>You have created 12 tickets related to<span>Slow Performance</span></p>
-                <p>You have created 12 tickets related to <span>Reports Missing Data</span></p>
-                <p>You have created 12 tickets related to <span>Application Inaccessible</span></p>
-                <p class='total'>Total 48 tickets</p> -->
-
-            </div>
             <div class="card">
                 <div class="card-header">
                 Create New Ticket
                 </div>
                 <div class="card-body">
                     <form class="form-horizontal" action="">
-                        <!-- title -->
+                        <!-- owner -->
                         <div class="form-group">
-                            <label class="control-label col-sm-2" for="title">Issue Title:</label>
+                            <label class="control-label col-sm-2" for="owner">Ticket Owner:</label>
                             <div class="col-sm-10">
-                                <input class="form-control" type="text" id="title" placeholder="Enter descriptive title" name="title">
+                                <input class="form-control" type="text" id="owner" placeholder="Enter Ticket Owner" name="owner">
                             </div>
                         </div>
                         <!-- issueType -->
@@ -50,9 +42,9 @@
                             <div class="col-sm-10">
                                 <select class="form-control" id="issueType" name="issueType">
                                     <option></option>   
-                                    <option value='Slow Performance'>Slow Performance</option>
-                                    <option value='Reports Missing Data'>Reports Missing Data</option>
-                                    <option value='Application Inaccessible'>Application Inaccessible</option>
+                                    <option>Slow Performance</option>
+                                    <option>Reports Missing Data</option>
+                                    <option>Application Inaccessible</option>
                                 </select>
                             </div>
                         </div>
@@ -86,6 +78,17 @@
                     </div>
             </div>
         </div>
-        <script src="script.js"></script>
+        <script>
+            if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js').then(registration =>{
+                    console.log('SW registered successfuly: ', registration);
+                });
+            });
+            }else{
+            console.log("Service Working not supported");
+                }
+        </script>
+        <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
