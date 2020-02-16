@@ -29,6 +29,9 @@
                 <button class="col-sm-offset-4 btn btn-danger" id="submit-button" type="submit">Submit</button>
             </div>
         </form>
+        <div id="error">
+          
+        </div>
     </div>
 
     <script>
@@ -43,6 +46,11 @@
             e.preventDefault();
             if((username.value == localStorage.getItem("username") && password.value == localStorage.getItem("password"))) {
                 window.location.href = "index.html";
+            } else {
+              const errorMessage = document.getElementById("error");
+              errorMessage.innerHTML = "Username or password is incorrect";
+              errorMessage.classList.add("alert");
+              errorMessage.classList.add("alert-danger");
             }
         });
     </script>
