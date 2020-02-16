@@ -16,7 +16,7 @@ app.listen(3000, function () {
 })
 
 app.get('/', function (req, res) {
-    res.sendFile('dist/index.html')
+    res.sendFile('dist/login.html')
 })
 
 app.get('/Data', function (req, res) {
