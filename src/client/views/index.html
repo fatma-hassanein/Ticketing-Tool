@@ -23,17 +23,18 @@
             </nav>
         </header>
         <div class="container">
+            <div id='info'></div>
             <div class="card">
                 <div class="card-header">
                 Create New Ticket
                 </div>
                 <div class="card-body">
                     <form class="form-horizontal" action="">
-                        <!-- owner -->
+                        <!-- title -->
                         <div class="form-group">
-                            <label class="control-label col-sm-2" for="owner">Ticket Owner:</label>
+                            <label class="control-label col-sm-2" for="title">Issue Title:</label>
                             <div class="col-sm-10">
-                                <input class="form-control" type="text" id="owner" placeholder="Enter Ticket Owner" name="owner">
+                                <input class="form-control" type="text" id="title" placeholder="Enter descriptive title" name="title">
                             </div>
                         </div>
                         <!-- issueType -->
@@ -42,9 +43,9 @@
                             <div class="col-sm-10">
                                 <select class="form-control" id="issueType" name="issueType">
                                     <option></option>   
-                                    <option>Slow Performance</option>
-                                    <option>Reports Missing Data</option>
-                                    <option>Application Inaccessible</option>
+                                    <option value='Slow Performance'>Slow Performance</option>
+                                    <option value='Reports Missing Data'>Reports Missing Data</option>
+                                    <option value='Application Inaccessible'>Application Inaccessible</option>
                                 </select>
                             </div>
                         </div>

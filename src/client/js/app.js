@@ -1,4 +1,4 @@
-   function getTicketsHistory (){
+ function getTicketsHistory (){
    
       var x = document.getElementById("issueType");
       var issueTypeList = [];
@@ -7,8 +7,6 @@
           issueTypeList[i]=x.options[i].value; 
       }
       console.log(issueTypeList);
-
-
 
       let info = document.getElementById("info");   //HTML Collection
 

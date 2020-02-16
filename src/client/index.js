@@ -4,6 +4,4 @@ import { getTicketsHistory } from './js/app.js'
 
 document.getElementById('logo').src = logo;
 
-
-
-export { getTicketsHistory }
+getTicketsHistory();
