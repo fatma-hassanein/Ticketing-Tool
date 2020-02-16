@@ -29,7 +29,7 @@
                 Create New Ticket
                 </div>
                 <div class="card-body">
-                    <form class="form-horizontal" action="">
+                    <form class="form-horizontal">
                         <!-- title -->
                         <div class="form-group">
                             <label class="control-label col-sm-2" for="title">Issue Title:</label>
@@ -42,7 +42,7 @@
                             <label class="control-label col-sm-2" for="issueType">Issue Type:</label>
                             <div class="col-sm-10">
                                 <select class="form-control" id="issueType" name="issueType">
-                                    <option></option>   
+                                    <option selected disabled hidden></option>   
                                     <option value='Slow Performance'>Slow Performance</option>
                                     <option value='Reports Missing Data'>Reports Missing Data</option>
                                     <option value='Application Inaccessible'>Application Inaccessible</option>
@@ -54,7 +54,7 @@
                             <label class="control-label col-sm-2" for="team">Team:</label>
                             <div class="col-sm-10">
                                 <select class="form-control" id="team" name="team">
-                                    <option></option>   
+                                    <option selected disabled hidden></option>   
                                     <option>CRM Support Team</option>
                                     <option>CRM Development Team</option>
                                     <option>Help Desk</option>
@@ -72,11 +72,11 @@
                         </div>
                         <div class="form-group">        
                             <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button id="submitBtn" class="btn btn-primary">Submit</button>
                             </div>
                         </div>
-                        </form>
-                    </div>
+                    </form>
+                </div>
             </div>
         </div>
         <script>
