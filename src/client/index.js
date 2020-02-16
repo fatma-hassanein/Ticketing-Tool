@@ -1,8 +1,9 @@
 import './styles/style.scss'
 import logo from './assets/images/logo.png'
-import { getTicketsHistory } from './js/app.js'
-import { getUserInputs } from './js/form.js'
-import { fetchDataFromFile } from './js/dataTables.js'
+import { getTicketsHistory } from './js/app'
+import { getUserInputs } from './js/form'
+import { fetchDataFromFile } from './js/dataTables'
+
 
 document.getElementById('logo').src = logo;
 
