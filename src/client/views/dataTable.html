@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <link rel="stylesheet" type="text/css" href="main.css" />
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <table id="myTable">
         <thead>
             <tr>
@@ -35,13 +37,7 @@
             </tr>
         </tbody>
     </table>
-   <script>
-        $(document).ready( function () {
-            $('#myTable').DataTable({
-                responsive: true,
-                colReorder: true
-            });
-        } );
-    </script>
+    <script src="datatables.js"></script>
 </body>
+
 </html>

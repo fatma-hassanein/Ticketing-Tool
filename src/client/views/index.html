@@ -1,95 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Ticketing Tool</title>
-        <link rel = "icon" href =  "" type = "image/x-icon"> 
-        <link rel="stylesheet" href="">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src="https://kit.fontawesome.com/yourcode.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="main.css" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <div id="logo"></div>
-            <nav id=navbar>
-              <h1>Ticketing Tool</h1>
-            </nav>
-        </header>
-        <div class="container">
-            <div id='info'></div>
-            <div class="card">
-                <div class="card-header">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ticketing Tool</title>
+    <link rel="icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="logo"></div>
+        <nav id=navbar>
+            <h1>Ticketing Tool</h1>
+        </nav>
+    </header>
+    <div class="container">
+        <div id='info'></div>
+        <div class="card">
+            <div class="card-header">
                 Create New Ticket
-                </div>
-                <div class="card-body">
-                    <form class="form-horizontal">
-                        <!-- title -->
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="title">Issue Title:</label>
-                            <div class="col-sm-10">
-                                <input class="form-control" type="text" id="title" placeholder="Enter descriptive title" name="title">
-                            </div>
+            </div>
+            <div class="card-body">
+                <form class="form-horizontal">
+                    <!-- title -->
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="title">Issue Title:</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" id="title" placeholder="Enter descriptive title"
+                                name="title">
                         </div>
-                        <!-- issueType -->
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="issueType">Issue Type:</label>
-                            <div class="col-sm-10">
-                                <select class="form-control" id="issueType" name="issueType">
-                                    <option selected disabled hidden></option>   
-                                    <option value='Slow Performance'>Slow Performance</option>
-                                    <option value='Reports Missing Data'>Reports Missing Data</option>
-                                    <option value='Application Inaccessible'>Application Inaccessible</option>
-                                </select>
-                            </div>
+                    </div>
+                    <!-- issueType -->
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="issueType">Issue Type:</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="issueType" name="issueType">
+                                <option selected disabled hidden></option>
+                                <option value='Slow Performance'>Slow Performance</option>
+                                <option value='Reports Missing Data'>Reports Missing Data</option>
+                                <option value='Application Inaccessible'>Application Inaccessible</option>
+                            </select>
                         </div>
-                        <!-- team -->
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="team">Team:</label>
-                            <div class="col-sm-10">
-                                <select class="form-control" id="team" name="team">
-                                    <option selected disabled hidden></option>   
-                                    <option>CRM Support Team</option>
-                                    <option>CRM Development Team</option>
-                                    <option>Help Desk</option>
-                                    <option>Hardware</option>
-                                    <option>Customer Experience</option>
-                                </select>
-                            </div>
+                    </div>
+                    <!-- team -->
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="team">Team:</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="team" name="team">
+                                <option selected disabled hidden></option>
+                                <option>CRM Support Team</option>
+                                <option>CRM Development Team</option>
+                                <option>Help Desk</option>
+                                <option>Hardware</option>
+                                <option>Customer Experience</option>
+                            </select>
                         </div>
-                        <!-- description -->
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="description">Description:</label>
-                            <div class="col-sm-10">
-                                <textarea class="form-control" id="description" name="description" rows="3"></textarea>
-                            </div>
+                    </div>
+                    <!-- description -->
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="description">Description:</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="description" name="description" rows="3"></textarea>
                         </div>
-                        <div class="form-group">        
-                            <div class="col-sm-offset-2 col-sm-10">
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
                             <button id="submitBtn" class="btn btn-primary">Submit</button>
-                            </div>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
-        <script>
-            if ('serviceWorker' in navigator) {
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js').then(registration =>{
+                navigator.serviceWorker.register('/service-worker.js').then(registration => {
                     console.log('SW registered successfuly: ', registration);
                 });
             });
-            }else{
+        } else {
             console.log("Service Working not supported");
-                }
-        </script>
-        <script type="text/javascript" src="main.js"></script>
-    </body>
+        }
+    </script>
+    <script src="form.js"></script>
+</body>
+
 </html>

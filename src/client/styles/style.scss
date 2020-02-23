@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-@import '../assets/js/DataTables/datatables.min.css';
 
 header {
     height: 100px;
@@ -7,12 +6,14 @@ header {
     box-shadow: 10px 10px grey;
     border: solid;
 }
+
 h1 {
     font-variant: small-caps;
     font-family: 'Open Sans';
     text-shadow: 1px 1px grey;
     color: red;
 }
+
 #logo {
     float: left;
     width: 120px;
@@ -21,30 +22,31 @@ h1 {
     background-repeat: no-repeat;
     background-image: url("../assets/images/logo.png");
 }
+
 #navbar {
     text-align: right;
     padding-right: 10px;
     padding-top: 20px;
 }
 
-.container{
+.container {
     margin-top: 30px;
     font-family: 'Open Sans';
     /* font-size: 15px; */
 }
 
-.card-header{
+.card-header {
     padding: 10px;
     font-size: 18px;
-} 
+}
 
-span{
+span {
     color: blue;
     font-family: 'Alata', sans-serif;
 
 }
 
-.total{
+.total {
     font-size: 18px;
     color: red;
     /* text-align: center; */
@@ -52,7 +54,7 @@ span{
 
 }
 
-#info{
+#info {
     background-color: rgb(228, 227, 227);
     margin: auto;
     margin-bottom: 20px;
