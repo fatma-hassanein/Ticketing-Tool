@@ -20,7 +20,6 @@ h1 {
     height: 120px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../assets/images/logo.png");
 }
 
 #navbar {
@@ -63,4 +62,58 @@ span {
     padding: 20px;
     /* font-family: 'Open Sans'; */
     font-family: 'Alata', sans-serif;
+}
+
+// Table styling
+
+#TKTtable {
+    width: 100%;
+    border: 1px solid black;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+button {
+    background-color: red;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#CreateTKT:hover {
+    background-color: #ffcccb;
+    /* light red */
+    color: black;
+}
+
+h1 {
+    font-variant: small-caps;
+    font-family: 'Open Sans';
+    text-shadow: 1px 1px grey;
+    color: red;
+}
+
+#logo {
+    float: right;
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#tktbar {
+    text-align: left;
+    padding-right: 10px;
+    padding-top: 20px;
 }

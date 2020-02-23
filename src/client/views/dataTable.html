@@ -13,8 +13,33 @@
 
 <body>
 
-    <table id="myTable">
+    <header>
+        <div ID="logo"></div>
+        <div ID=tktbar>
+            <h1> View Tickets</h1>
+        </div>
+    </header>
+    <table id="TKTtable">
         <thead>
+            <tr>
+                <th>Ticket Number</th>
+                <th>Assigned To</th>
+                <th>Created By</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id=data>
+            <tr>
+                <td>12345</td>
+                <td>Radio</td>
+                <td>xyz</td>
+                <td>in Progress...</td>
+            </tr>
+        </tbody>
+    </table>
+    <button id=CreateTKT>Create New Ticket</button>
+    <!-- <table id="myTable"> -->
+    <!-- <thead>
             <tr>
                 <th>Ticket Number</th>
                 <th>Assigned To</th>
@@ -36,7 +61,7 @@
                 <td>Row 2 Data 2</td>
             </tr>
         </tbody>
-    </table>
+    </table> -->
     <script src="datatables.js"></script>
 </body>
 
